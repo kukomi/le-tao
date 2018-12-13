@@ -1,0 +1,85 @@
+// 定义一个颜色变量
+@main-color: #006699;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    padding: .45rem 0;
+    height: 100vh;
+}
+
+#main {
+    height: 100%;
+    position: relative;
+}
+
+
+// 头部的公共样式
+#header {
+    background-color: @main-color;
+    height: .45rem;
+    display: flex;
+    padding-left: .45rem;
+    padding-right: .45rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    h4 {
+       margin: 0;
+       font-weight: normal;
+       width: 2.85rem;
+       text-align: center;
+       line-height: .45rem;
+       color: #fff;
+    }
+    a {
+        width: .45rem;
+        height: .45rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        line-height: .45rem;
+        color: #fff;
+    }
+}
+
+
+// 底部公共样式
+#footer {
+    width: 100vw;
+    height: .45rem;
+    background-color: @main-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    ul {
+        display: flex;
+        li {
+            width: 25vw;
+            a {
+                display: block;
+                color: #fff;
+                text-align: center;
+                padding: 0.085rem;
+                span {
+                    display: block;
+                    margin-top: .02rem
+                }
+            }
+        }
+    }
+}
